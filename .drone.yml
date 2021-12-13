@@ -5,4 +5,4 @@ steps:
 - name: build
   image: golang:1.17
   commands:
-  - make build_linux_amd64
+  - make build
