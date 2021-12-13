@@ -10,4 +10,4 @@ steps:
     GOARCH: amd64
     CGO_ENABLED: 0
   commands:
-  - make build_linux_amd64
+  - make build
