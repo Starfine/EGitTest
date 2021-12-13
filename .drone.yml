@@ -1,13 +1,17 @@
 kind: pipeline
 type: docker
 name: linux_amd64
-
 steps:
 - name: build
   image: golang:1.17
-  environment:
-    GOOS: linux
-    GOARCH: amd64
-    CGO_ENABLED: 0
   commands:
-  - make build
+  - make build_linux_amd64
+
+kind: pipeline
+type: docker
+name: linux_i386
+steps:
+- name: build
+  image: golang:1.17
+  commands:
+  - make build_linux_i386
